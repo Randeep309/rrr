@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Intro</title>
+<title>Randeep Raj - Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva&family=Comfortaa&family=Revalia&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -15,130 +15,173 @@
 }
 
 body {
-    font-family: 'Cinzel', serif;
-    overflow: hidden;
+    font-family: 'Playpen Sans Deva', sans-serif;
+    background: #1e1e2f;
+    color: #f1f1b1;
+    line-height: 1.6;
 }
 
-/* INTRO SCREEN */
-.intro {
+/* CONTAINER (MAIN FIX) */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* NAVBAR */
+nav {
     position: fixed;
     width: 100%;
-    height: 100%;
-    background:
-        radial-gradient(circle at 30% 30%, rgba(255,0,0,0.2), transparent 40%),
-        radial-gradient(circle at 70% 70%, rgba(255,255,255,0.15), transparent 40%),
-        linear-gradient(135deg, #000, #3b0000, #111);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-
-/* COUNT */
-.count {
-    position: absolute;
-    font-size: 18vw;
-    color: white;
-}
-
-/* DROP */
-@keyframes drop {
-    0% { transform: translateY(-200px) scale(1.5); opacity: 0; }
-    60% { transform: translateY(20px); opacity: 1; }
-    100% { transform: translateY(0); }
-}
-
-/* SHAKE */
-@keyframes shake {
-    0% { transform: translate(0); }
-    25% { transform: translate(-3px,3px); }
-    50% { transform: translate(3px,-3px); }
-    75% { transform: translate(-3px,-3px); }
-    100% { transform: translate(3px,3px); }
-}
-
-/* PHOTO CENTER */
-.photo {
-    position: absolute;
-    right: -300px;
-    opacity: 0;
-}
-
-.photo img {
-    width: 220px;
-    max-width: 40vw;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(255,0,0,0.7);
-}
-
-/* SLIDE CENTER */
-@keyframes slideCenter {
-    0% { right: -300px; opacity: 0; }
-    100% { right: 50%; transform: translateX(50%); opacity: 1; }
-}
-
-/* MOVE TO CORNER */
-@keyframes toCorner {
-    0% { right: 50%; transform: translateX(50%) scale(1); }
-    100% {
-        right: 15px;
-        top: 15px;
-        transform: scale(0.5);
-    }
-}
-
-/* FADE INTRO */
-.fade-out {
-    animation: fadeOut 1.5s forwards;
-}
-
-@keyframes fadeOut {
-    to { opacity: 0; visibility: hidden; }
-}
-
-/* PORTFOLIO */
-.portfolio {
-    position: relative;
-    padding: 20px;
-    display: none;
-}
-
-/* SHOW PORTFOLIO */
-.show {
-    display: block;
-}
-
-/* HEADER */
-.header {
+    top: 0;
+    background: #96010d;
     display: flex;
     justify-content: space-between;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.left {
+    font-family: 'Revalia';
+    font-size: 1.5rem;
+}
+
+.right ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.right a {
+    color: #f1f1b1;
+    text-decoration: none;
+}
+
+/* HERO */
+.one {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-/* PROFILE CORNER IMAGE */
-.profile {
-    position: fixed;
-    top: 15px;
-    right: 15px;
+.left2 {
+    flex: 1;
+    font-size: 2.2rem;
 }
 
-.profile img {
-    width: 80px;
-    border-radius: 50%;
+.right2 {
+    flex: 1;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.first {
+    color: #933ae6;
+}
+
+/* SECTION */
+.section-title {
+    font-size: 2rem;
+    margin: 40px 0 20px;
+    text-decoration: underline;
+    color: paleturquoise;
+}
+
+/* ABOUT */
+.three {
+    display: flex;
+    gap: 40px;
+}
+
+/* SERVICES */
+.five {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    background: #8f8787;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+
+/* QUALIFICATION */
+.seven ul {
+    padding-left: 20px;
+}
+
+/* CONTACT */
+.nine {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(red, pink);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background: linear-gradient(red, blue);
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+
+/* HR */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, purple, red);
+    margin: 40px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
 }
 
 /* MOBILE */
-@media (max-width: 600px) {
-    .count {
-        font-size: 25vw;
+@media (max-width: 768px) {
+
+    .one, .three, .five, .nine {
+        flex-direction: column;
     }
 
-    .photo img {
-        width: 160px;
+    nav {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .profile img {
-        width: 60px;
+    .left2 {
+        font-size: 1.6rem;
+        text-align: center;
     }
 }
 </style>
@@ -146,72 +189,97 @@ body {
 
 <body>
 
-<!-- INTRO -->
-<div class="intro" id="intro">
-    <div class="count" id="count">1</div>
-    <div class="photo" id="photo">
-        <img src="your-photo.jpg">
+<nav>
+    <div class="left">Randeep Raj</div>
+    <div class="right">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#qualification">Qualification</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
+</nav>
+
+<div class="container">
+
+<!-- HERO -->
+<section class="one">
+    <div class="left2">
+        Hey! I'm <span class="first">Randeep Raj</span><br>
+        <span id="element"></span>
+    </div>
+    <div class="right2">
+        <img src="me.png">
+    </div>
+</section>
+
+<hr>
+
+<!-- ABOUT -->
+<div id="about" class="section-title">About</div>
+<section class="three">
+    <div><img src="coder.png"></div>
+    <div>I am a student and frontend developer from Bihar, India.</div>
+</section>
+
+<hr>
+
+<!-- SERVICES -->
+<div id="services" class="section-title">Services</div>
+<section class="five">
+    <div class="card">Web Development</div>
+    <div class="card">Startup Ideas</div>
+    <div class="card">Bug Fixing</div>
+</section>
+
+<hr>
+
+<!-- QUALIFICATION -->
+<div id="qualification" class="section-title">Qualification</div>
+<section class="seven">
+<ul>
+<li>Grade 9 Student</li>
+<li>Guitar Grade 4 Certified</li>
+<li>Critical Thinker</li>
+<li>Qualified in SOF Olympiads</li>
+<li>NSEJS Participant</li>
+<li>IOQM Participant</li>
+</ul>
+</section>
+
+<hr>
+
+<!-- CONTACT -->
+<div id="contact" class="section-title">Contact</div>
+<section class="nine">
+    <form class="contact-form">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea rows="4" placeholder="Message"></textarea>
+        <button>Submit</button>
+    </form>
+
+    <div class="contact-info">
+        <p>📷 myself_yash_raj__</p>
+        <p>📧 randeepraj309@hotmail.com</p>
+    </div>
+</section>
+
 </div>
 
-<!-- PORTFOLIO -->
-<div class="portfolio" id="portfolio">
-    <div class="header">
-        <h1>My Portfolio</h1>
-    </div>
+<footer>
+    <div style="background:#72726d;padding:10px;">Thank You</div>
+    <div style="background:black;padding:10px;">© Randeep Raj</div>
+</footer>
 
-    <div class="profile">
-        <img src="your-photo.jpg">
-    </div>
-
-    <p style="margin-top:80px;">
-        Welcome to my portfolio. Add your content here.
-    </p>
-</div>
-
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script>
-let count = document.getElementById("count");
-let photo = document.getElementById("photo");
-let intro = document.getElementById("intro");
-let portfolio = document.getElementById("portfolio");
-
-let num = 1;
-
-function nextNumber() {
-    if (num <= 3) {
-        count.innerText = num;
-
-        count.style.animation = "none";
-        setTimeout(() => {
-            count.style.animation = "drop 0.5s ease-out, shake 0.2s 3";
-        }, 10);
-
-        num++;
-        setTimeout(nextNumber, 1000);
-    } else {
-        count.style.display = "none";
-
-        // Show photo
-        photo.style.opacity = 1;
-        photo.style.animation = "slideCenter 1s forwards";
-
-        // Wait 3 sec
-        setTimeout(() => {
-
-            // Move photo to corner
-            photo.style.animation = "toCorner 1s forwards";
-
-            // Show portfolio behind
-            portfolio.classList.add("show");
-
-            // Fade intro background only
-            intro.classList.add("fade-out");
-
-        }, 3000);
-    }
-}
-
-nextNumber();
+new Typed('#element', {
+    strings: ['Student', 'Web Developer', 'Learner'],
+    typeSpeed: 50,
+});
 </script>
 
 </body>
