@@ -1,284 +1,667 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Randeep Raj - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randeep Raj -personal portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Revalia&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Jua&family=Revalia&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cookie&family=Jua&family=Revalia&display=swap"
+        rel="stylesheet">
+  <link rel="icon" type="image/png" href="image.png">
 
-  <link rel="icon" type="image/png" href="hi.png"><style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <style>
+        a:link {
+            color: rgba(241, 241, 177, 0.589);
+            /* Unvisited */
+        }
 
-body {
-    font-family: 'Playpen Sans Deva', sans-serif;
-    background: #1e1e2f;
-    color: #f1f1b1;
-    line-height: 1.6;
-}
+        a:visited {
+            color: rgba(241, 241, 177, 0.589);
+            /* Visited */
+        }
 
-/* CONTAINER (MAIN FIX) */
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-}
+        a:hover {
+            color: rgba(241, 241, 177, 0.589);
+            /* Mouse hover */
+            font-size: 135%;
+        }
 
-/* NAVBAR */
-nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: #96010d;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
-    z-index: 1000;
-}
+        a:active {
+            color: rgba(241, 241, 177, 0.589);
+            /* While clicking */
+        }
 
-body {
-    padding-top: 70px;
-}
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <style>
+        * {
+            margin: 0;
 
-.left {
-    font-family: 'Revalia';
-    font-size: 1.5rem;
-}
 
-.right ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
+            padding: 0;
+        }
 
-.right a {
-    color: #f1f1b1;
-    text-decoration: none;
-}
+        body {
+            color: rgba(241, 241, 177, 0.589);
+            font-family: Playpen Sans Deva;
+            background-color: #1e1e2f;
+            background-size: cover;
+            /* Make it cover the full screen */
+            background-repeat: no-repeat;
+            /* Prevent repeating */
 
-/* HERO */
-.one {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
+            background-position: center;
+        }
 
-.left2 {
-    flex: 1;
-    font-size: 2.2rem;
-}
 
-.right2 {
-    flex: 1;
-    text-align: center;
-}
 
-img {
-    max-width: 100%;
-}
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #96010d;
+            font-size: 100%;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            position: fixed;
 
-.first {
-    color: #933ae6;
-}
+        }
 
-/* SECTION */
-.section-title {
-    font-size: 2rem;
-    margin: 40px 0 20px;
-    text-decoration: underline;
-    color: paleturquoise;
-}
+        div.left {
+            align-items: flex-start;
+            font-size: 190%;
+            font-family: Revalia;
+            color: lavender;
 
-/* ABOUT */
-.three {
-    display: flex;
-    gap: 40px;
-}
+        }
 
-/* SERVICES */
-.five {
-    display: flex;
-    gap: 20px;
-}
+        div.right {
+            font-size: 130%;
+        }
 
-.card {
-    flex: 1;
-    padding: 20px;
-    background: #8f8787;
-    border-radius: 10px;
-    text-align: center;
-    color: black;
-}
 
-/* QUALIFICATION */
-.seven ul {
-    padding-left: 20px;
-}
 
-/* CONTACT */
-.nine {
-    display: flex;
-    gap: 40px;
-}
 
-.contact-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: linear-gradient(red, pink);
-    padding: 20px;
-    border-radius: 10px;
-}
 
-.contact-info {
-    flex: 1;
-}
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
 
-input, textarea {
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-}
+        }
 
-button {
-    padding: 10px;
-    background: linear-gradient(red, blue);
-    border: none;
-    color: white;
-    border-radius: 8px;
-}
+        nav ul li {
+            list-style: none;
+            margin-right: 6%;
+        }
 
-/* HR */
-hr {
-    border: none;
-    height: 2px;
-    background: linear-gradient(to right, purple, red);
-    margin: 40px 0;
-}
+        section.one {
+            display: flex;
+            justify-content: space-between;
+            font-size: 100%;
 
-/* FOOTER */
-footer {
-    text-align: center;
-}
+            align-items: center;
+        }
 
-/* MOBILE */
-@media (max-width: 768px) {
+        div.left2 {
+            width: auto;
+            font-size: 3rem;
+            margin-top: 50px;
+            margin-left: auto;
+            word-spacing: 1%;
+            border: 3px;
+        }
 
-    .one, .three, .five, .nine {
-        flex-direction: column;
-    }
+        div.right2 {
 
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
+            width: 30%;
+            margin-top: 50px;
+            margin-right: auto;
 
-    .left2 {
-        font-size: 1.6rem;
-        text-align: center;
-    }
-}
-</style>
+        }
+        .first:hover{
+
+            text-shadow: 50px 5px 5px 5px #f10404;
+        }
+          
+
+
+        .first {
+            color: rgb(147, 58, 230);
+        }
+
+
+
+
+        .two {
+            display: flex;
+            margin-top: 55px;
+            margin-left: 10%;
+            align-items: center;
+            text-decoration: underline;
+        }
+
+
+        .two h1 {
+            color: paleturquoise;
+            font-family: Comfortaa;
+            font-size: 2.5rem;
+            margin-left: 10%;
+
+        }
+
+        .l2 {
+            width: 40%;
+            background-color: rgba(211, 22, 22, 0.959);
+
+
+        }
+
+        hr {
+            color: brown;
+            background-color: rgb(154, 132, 233);
+            height: 3px;
+            border: 3px;
+            border-radius: 5px;
+            background: linear-gradient(to right, rgb(154, 132, 233), brown);
+        }
+
+
+
+        .r {
+            width: 40%;
+            margin-right: 0%;
+            justify-content: space-between;
+            margin-left: 15%;
+            font-size: 2rem;
+            margin-top: 150px;
+            align-content: flex-start;
+            margin-top: 75px;
+            margin-bottom: 75px;
+
+        }
+
+        .l {
+            width: 40%;
+            margin-right: 7%;
+            justify-content: space-between;
+            margin-left: 10%;
+            font-size: 2rem;
+            margin-top: 75px;
+            align-content: center;
+            margin: bottom 75px;
+
+        }
+
+
+        .three {
+            display: flex;
+            margin-top: 15px;
+            margin-left: 0%;
+            height: auto;
+            margin-right: 10%;
+            margin-bottom: 30px;
+        }
+
+        .three img {
+            width: 700px;
+            height: auto;
+            size: 250px;
+            justify-content: flex-start
+        }
+
+        .l.img1 {
+            size: 250px;
+            width: 250px;
+            margin-left: 0%;
+        }
+
+        #element {
+            color: rgba(181, 226, 121, 0.795);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .bihar {
+            font-family: Jua;
+            color: aquamarine;
+
+        }
+
+        .hr2 {
+            background-color: red;
+            height: 3px;
+            border: none;
+            color: red';
+
+        }
+
+        .four {
+            display: flex;
+            margin-top: 55px;
+            margin-left: 10%;
+            align-items: center;
+            text-decoration: underline;
+        }
+
+        .four,
+        h1 {
+            color: paleturquoise;
+            font-family: Comfortaa;
+            font-size: 2.5rem;
+        }
+
+        .five {
+            margin-top: 75px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            color: #1e1e2f;
+            margin-bottom: 75px;
+        }
+
+        .fiveLeft {
+            width: 40%;
+            margin-right: 3%;
+            margin-left: 6%;
+            justify-content: space-evenly;
+            font-size: 2rem;
+            margin-top: 0px;
+            align-content: flex-start;
+            margin: bottom 75px;
+            background-color: rgb(143, 135, 135);
+            height: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #faf5b8;
+            font-size: 1.55rem;
+            margin-bottom: 5px;
+        }
+
+        .fiveMiddle {
+            width: 40%;
+            margin-right: 3%;
+            margin-left: 3%;
+            justify-content: space-evenly;
+            font-size: 125%;
+            margin-top: 0px;
+            align-content: flex-start;
+            margin: bottom 75px;
+            background-color: rgb(143, 135, 135);
+            height: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #faf5b8;
+            font-size: 1.55rem;
+            margin-bottom: 5px;
+            font-size: 1.45rem;
+            margin-bottom: 5px;
+        }
+
+        .fiveRight {
+            width: 40%;
+            margin-right: 6%;
+            margin-left: 3%;
+            justify-content: space-evenly;
+            font-size: 2rem;
+            margin-top: 0px;
+            align-content: flex-start;
+            margin: bottom 75px;
+            background-color: rgb(143, 135, 135);
+            height: 400px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px #faf5b8;
+            text-align: left;
+            vertical-align: top;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .fiveRight:hover {
+            background-color: #ff8686;
+        }
+
+        .fiveLeft:hover {
+            background-color: #ff8686;
+        }
+
+        .fiveMiddle:hover {
+            background-color: #ff8686;
+        }
+
+        .img1 {
+            width: auto;
+        }
+
+        .img2 {
+            width: 325px;
+        }
+
+        .img3 {
+            width: auto;
+            height: 200px;
+            align-items: center;
+            margin-left: 50px;
+        }
+
+        .six {
+            display: flex;
+            margin-top: 55px;
+            margin-left: 10%;
+            align-items: center;
+            text-decoration: underline;
+            color: paleturquoise;
+            font-family: Comfortaa;
+            font-size: 2.5rem;
+            margin-left: 10%;
+        }
+
+        .footer {
+            justify-content: center;
+            color: black;
+            text-align: center;
+            height: auto;
+
+        }
+
+        .low {
+            justify-content: center;
+            background-color: #000000;
+            text-align: center;
+            color: #ffffff;
+            height: 30pxpx;
+        }
+
+        .low1 {
+            font-size: 150%;
+            height: 39kpx;
+            vertical-align: middle;
+            text-align: center;
+            background-color: #72726d;
+
+        }
+
+        .eight {
+            display: flex;
+            margin-top: 55px;
+            margin-left: 10%;
+            align-items: center;
+            text-decoration: underline;
+            color: paleturquoise;
+            font-family: Comfortaa;
+            font-size: 2.5rem;
+            margin-left: 10%;
+        }
+
+        .nine {
+            margin-top: 75px;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            color: #f1f1f3;
+            margin-bottom: 75px;
+        }
+
+        .nineL {
+            width: 40%;
+            margin-right: 7%;
+            justify-content: center;
+            margin-left: 10%;
+            font-size: 2rem;
+            margin-top: auto;
+            align-content: center;
+            margin: bottom 75px;
+
+            border-radius: 15p;
+        }
+
+        .nineR {
+            width: 40%;
+            margin-right: 7%;
+            justify-content: flex-start;
+            margin-left: 10%;
+            font-size: 2rem;
+            margin-top: 0px;
+            align-content: flex-end;
+         margin-bottom: 75px;
+        }
+
+        .contact-form {
+            justify-content: center;
+            vertical-align: middle;
+            display: grid;
+            border-radius: 15px;
+            background: linear-gradient(red, pink);
+
+        }
+
+        .con1 {
+            justify-content: center;
+            display: flex;
+            height: 40px;
+            width: 350px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        .con2 {
+            justify-content: center;
+            display: flex;
+            height: 40px;
+            width: 350px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        .con3 {
+            justify-content: center;
+            display: flex;
+            height: 40px;
+            width: 350px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            tab-size: 50px;
+        }
+
+        .con4 {
+            justify-content: center;
+            display: flex;
+            height: 60px;
+            width: 150px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            background: linear-gradient(270deg, rgb(221, 30, 30), rgb(96, 96, 224));
+            font-family: Cookie;
+            font-size: 3.5rem;
+            text-align: start;
+
+
+
+
+        }
+
+        .con1::placeholder {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1rem;
+            vertical-align: middle;
+            color: #000000;
+        }
+
+        .con2::placeholder {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1rem;
+            vertical-align: middle;
+            color: #000000;
+        }
+
+        .con3::placeholder {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1rem;
+            vertical-align: middle;
+            align-items: center;
+            color: #000000;
+            display: flex;
+        }
+
+        .submit {
+            height: 40px;
+            width: 150px;
+
+        }
+
+        .insta {
+            width: 70px;
+        }
+
+        .mail {
+            width: 40px;
+        }
+
+        .id {
+            font-size: 1.65rem;
+            margin-left: 10px;
+        }
+
+        .seven {
+            margin-left: 120px;
+            margin-top: 40px;
+            font-size: 2rem;
+            color: burlywood;
+            margin-bottom: 50px;
+
+        }
+    </style>
+
+
+
 </head>
 
 <body>
+    <header>
 
-<nav>
-    <div class="left">Randeep Raj</div>
-    <div class="right">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#qualification">Qualification</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+        <nav>
 
-<div class="container">
 
-<!-- HERO -->
-<section class="one">
-    <div class="left2">
-        Hey! I'm <span class="first">Randeep Raj</span><br>
-        <span id="element"></span>
-    </div>
-    <div class="right2">
-        <img src="me.png">
-    </div>
-</section>
+            <div class="left">Randeep Raj</div>
+            <div class="right">
 
-<hr>
 
-<!-- ABOUT -->
-<div id="about" class="section-title">About</div>
-<section class="three">
-    <div><img src="coder.png"></div>
-    <div>I am a student and frontend developer from Bihar, India.</div>
-</section>
 
-<hr>
+                <ul>
 
-<!-- SERVICES -->
-<div id="services" class="section-title">Services</div>
-<section class="five">
-    <div class="card">Web Development</div>
-    <div class="card">Startup Ideas</div>
-    <div class="card">Bug Fixing</div>
-</section>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#27">About</a></li>
+                    <li><a href="#420">Services</a></li>
+                    <li><a href="#hr3">Qualification</a></li>
+                    <li><a href="#hr4">Contact</a></li>
+                </ul>
+            </div>
 
-<hr>
 
-<!-- QUALIFICATION -->
-<div id="qualification" class="section-title">Qualification</div>
-<section class="seven">
-<ul>
-<li>Grade 9 Student</li>
-<li>Guitar Grade 4 Certified</li>
-<li>Critical Thinker</li>
-<li>Qualified in SOF Olympiads</li>
-<li>NSEJS Participant</li>
-<li>IOQM Participant</li>
-</ul>
-</section>
+    </header>
+    <main>
+        <section class="one">
+            <div class="left2">
+                Hey!!
+                <div>It's me <span class="first"> Randeep Raj</span>
+                I am</div>
+                <span id="element"></span>
 
-<hr>
 
-<!-- CONTACT -->
-<div id="contact" class="section-title">Contact</div>
-<section class="nine">
-    <form class="contact-form">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea rows="4" placeholder="Message"></textarea>
-        <button>Submit</button>
-    </form>
+            </div>
 
-    <div class="contact-info">
-        <p>📷 myself_yash_raj__</p>
-        <p>📧 randeepraj309@hotmail.com</p>
-    </div>
-</section>
+            <div class="right2">
+                <img src="me.png" alt="" class="imgofmyself">
+            </div>
 
-</div>
+        </section>
+        <hr class="hr1" size="2.5px" id="27">
+        <section class="two" id="two">
+            <div class="999">
+                <h1>About</h1>
+            </div>
 
-<footer>
-    <div style="background:#72726d;padding:10px;">Thank You</div>
-    <div style="background:black;padding:10px;">© Randeep Raj</div>
-</footer>
 
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script>
-new Typed('#element', {
-    strings: ['Student', 'Web Developer', 'Learner'],
-    typeSpeed: 50,
-});
-</script>
+        </section>
+        <section class="three">
+            <div class="l"><img src="coder.png" alt=""></div>
+            <div class="r">
+                <p>I am Randeep Raj, a student as well as a frontend developer.</p>
+                <p>I am from <span class='bihar'>Bihar, India.</span></p>
+            </div>
+            </div>
+        </section>
+        <hr class="'hr2" color=" rgb(154, 132, 233)" id="420">
+        <section class="four">
+            <h1> Services
+            </h1>
+        </section>
+        <section class="five">
+            <div class="fiveLeft"><img src="frontend.png" alt="" class="img1"><br>I am a webdeveloper. Having little
+                knowledge and experice about web development </div>
+            <div class="fiveMiddle"><img src="shake.h.png" alt="" class="img2"><br>I am also in intrested in bussines.
+                <br>I am to work with small startups
+            </div>
+            <div class="fiveRight"><img src="bug.png" alt="" class="img3"><br>I also worrk as a bug remover, and solves
+                error from HTML, CSS and Java Script code </div>
+        </section>
+        <hr class="hr3" id="hr3">
+        <section class="six">Qualification</section>
+        <section class="seven">Hi! <br>I am Randeep Raj. <br>I am a student of grade 8th. <br>I have qualified several
+            olympiads like silver zone and SOF, as well as a good performer in my class </section>
+        <hr id="hr4">
+        <section class="eight">Contact</section>
+        <sevtion class="nine">
+            <div class="nineL">
+                <section class="contact" id="contact">
 
+
+                    <form class="contact-form">
+                        <input type="text" placeholder="   Your Name" required class="con1">
+                        <input type="email" placeholder="   Your Email" required class="con2">
+                        <textarea placeholder="   Your Message" rows="5" required class="con3"></textarea>
+                        <button type="submit" class="con4"><span class="submit">..submit</span></button>
+                    </form>
+                </section>
+            </div>
+            <div class="nineR"><img src="insta.png" alt="" class="insta">myself_yash_raj__<br><img src="mail.png" alt=""
+                    class="mail"><span class="id"> randeepraj309@hotmail.com</span></div>
+        </sevtion>
+        <footer class="footer">
+            <div class="low1">Thank you</div>
+            <div class="low">Copyright © by Randeep Raj 💕 Ruchita </div>
+        </footer>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [' Guy,', 'Web developer', 'and Enterpneur'],
+            typeSpeed: 50,
+        });
+    </script>
 </body>
+
 </html>
